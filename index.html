@@ -1,14 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+
     <title>FCC Project: Technical Doc</title>
 </head>
+
 <body>
 
+    <div id="wrapper">
+        <header id="title">
+            <i class="fab fa-js-square fa-3x"></i>
+            <h1>Common Problems Technical Doc</h1>
+        </header>
+        <!-- navigatin should contain id of nav-bar and at least one header describing topic of technical doc -->
+
+        <!-- nav-bar should also contain a elements with class of nav-link; one for every main section
+
+            also should be on left side of screen for all normal size devices
+            -->
+        <aside id="nav-bar">
+            <div class="nav-box">
+                <a href="#about" class="nav-link">
+                    <h3>About</h3>
+                </a>
+            </div>
+            <div class="nav-box">
+                <a href="#reverse" class="nav-link">
+                    <h3>Reverse String</h3>
+                </a>
+            </div>
+            <div class="nav-box">
+                <a href="#" class="nav-link">
+                    <h3>Three</h3>
+                </a>
+            </div>
+            <div class="nav-box">
+                <a href="#" class="nav-link">
+                    <h3>Four</h3>
+                </a>
+            </div>
+        </aside>
+        <main class="main-doc">
+            <section class="main-section">
+                <header class="section-header">
+                    <h3 id="about">About this doc.</h3>
+                </header>
+                <p>This is a technical document designed to meet the requirements of freecodecamp's 'technical
+                    documenatation' challenge, as a requirement for their front-end certificate.</p>
+                <p>
+                    For this project I decided to utilise solutions to common JS problems, provided courtesy of
+                    Traversy Media's <a href="https://www.youtube.com/playlist?list=PLillGF-Rfqbb4ZOnsNCIB-DnLuUrQjS_G"
+                        target="_blank">JS Cardio Sessions.</a> None of these solutions are my own, and my use of them
+                    is purely presentational for the sake of this fcc challenge. All rights and praise belong to Brad
+                    Traversy at <a href="www.traversymedia.com" target="_blank">Traversy Media,</a> who's content I
+                    have been using alongside that provided by the awesome team at fcc.
+                </p>
+            </section>
+            <section class="main-section">
+                <header class="section-header">
+                    <h3 id="reverse">Reverse a string.</h3>
+                </header>
+                <pre><code>ex. reverseString('hello') - 'olleh'</code></pre>
+                <p>In this challenge the aim is to return a string in reverse. There are numerous solutions to this
+                    problem, a few are below.</p>
+                <ol>
+                    <li>
+                        <pre>
+                    <code>
+                            function reverseString(str) {
+                            // return str
+                            // .split('')
+                            // .reverse()
+                            // .join('');
+                            }
+                        </code></pre>
+                    </li>
+                    <li>
+                        <pre><code>
+                            // let revString = '';
+                            // for(let i = str.length - 1; i >= 0; i--) {
+                            // revString = revString + str[i];
+                            // }
+                            // return revString;
+                        </code></pre>
+                    </li>
+                    <li>
+                        <pre><code>
+                                // let revString = '';
+                                // for(let i = 0; i <= str.length - 1; i++) {
+                                //   revString = str[i] + revString;
+                                // }
+                                // return revString;
+                        </code></pre>
+                    </li>
+                    <li>
+                        <pre><code>
+                                let revString = '';
+                                // for(let i = 0; i <= str.length - 1; i++) {
+                                //   revString = str[i] + revString;
+                                // }
+                                // return revString;
+                        </code></pre>
+                    </li>
+                    <li>
+                        <pre><code>
+                                / let revString = '';
+                                // str.split('').forEach(char => revString = char + revString);
+                                // return revString;
+                        </code></pre>
+                    </li>
+                </ol>
+            </section>
+            <section class="main-section">
+                <header class="section-header">
+                    <h3>Lorem, ipsum dolor.</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam laboriosam ducimus
+                    hic sint sit, possimus atque modi vitae aliquid corrupti tempora eius quia, assumenda iure
+                    tempore ut quae aperiam?</p>
+            </section>
+            <section class="main-section">
+                <header class="section-header">
+                    <h3>Lorem, ipsum dolor.</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam laboriosam ducimus
+                    hic sint sit, possimus atque modi vitae aliquid corrupti tempora eius quia, assumenda iure
+                    tempore ut quae aperiam?</p>
+            </section>
+            <section class="main-section">
+                <header class="section-header">
+                    <h3>Lorem, ipsum dolor.</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam laboriosam ducimus
+                    hic sint sit, possimus atque modi vitae aliquid corrupti tempora eius quia, assumenda iure
+                    tempore ut quae aperiam?</p>
+            </section>
+            <section class="main-section">
+                <header class="section-header">
+                    <h3>Lorem, ipsum dolor.</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam laboriosam ducimus
+                    hic sint sit, possimus atque modi vitae aliquid corrupti tempora eius quia, assumenda iure
+                    tempore ut quae aperiam?</p>
+            </section>
+            <section class="main-section">
+                <header class="section-header">
+                    <h3>Lorem, ipsum dolor.</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam laboriosam ducimus
+                    hic sint sit, possimus atque modi vitae aliquid corrupti tempora eius quia, assumenda iure
+                    tempore ut quae aperiam?</p>
+
+            </section>
+            <section class="main-section">
+                <header class="section-header">
+                    <h3>Lorem, ipsum dolor.</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam laboriosam ducimus
+                    hic sint sit, possimus atque modi vitae aliquid corrupti tempora eius quia, assumenda iure
+                    tempore ut quae aperiam?</p>
+            </section>
+            <section class="main-section">
+                <header class="section-header">
+                    <h3>Lorem, ipsum dolor.</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam laboriosam ducimus
+                    hic sint sit, possimus atque modi vitae aliquid corrupti tempora eius quia, assumenda iure
+                    tempore ut quae aperiam?</p>
+            </section>
+            <section class="main-section">
+                <header class="section-header">
+                    <h3>Lorem, ipsum dolor.</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam laboriosam ducimus
+                    hic sint sit, possimus atque modi vitae aliquid corrupti tempora eius quia, assumenda iure
+                    tempore ut quae aperiam?</p>
+            </section>
+
+
+            <!-- requires min of 5 sections with class main_section and id relevant to the topic inside -->
+
+            <!-- first element in each section should be header -->
+
+            <!-- contain at least 10 x p elements; at least 5 code elements; at least 5 x li items -->
+
+
+        </main>
+
+        <!-- at least one media query -->
+        <footer id="footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur illo rem quod alias vitae libero
+                impedit voluptate ipsum! Earum molestias eligendi repellendus, quia natus laborum quam nihil magnam
+                consequatur animi!</p>
+        </footer>
+
+    </div>
 
 </body>
+
 </html>
